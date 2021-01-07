@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD406193259DB42E00BC0381 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406192259DB42E00BC0381 /* AppDelegate.m */; };
+		CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406195259DB42E00BC0381 /* SceneDelegate.m */; };
+		CD406199259DB42E00BC0381 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406198259DB42E00BC0381 /* ViewController.m */; };
+		CD40619C259DB42E00BC0381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD40619A259DB42E00BC0381 /* Main.storyboard */; };
+		CD40619E259DB43000BC0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD40619D259DB43000BC0381 /* Assets.xcassets */; };
+		CD4061A1259DB43000BC0381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD40619F259DB43000BC0381 /* LaunchScreen.storyboard */; };
+		CD4061A4259DB43000BC0381 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4061A3259DB43000BC0381 /* main.m */; };
+		CD4061AF259DB48C00BC0381 /* LGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4061AE259DB48C00BC0381 /* LGLView.m */; };
+		CD4061B4259DBBB300BC0381 /* LCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4061B3259DBBB300BC0381 /* LCamera.m */; };
+		CD4061B9259DC3F900BC0381 /* LGLProgram.c in Sources */ = {isa = PBXBuildFile; fileRef = CD4061B8259DC3F900BC0381 /* LGLProgram.c */; };
+		CD4061BE259DD35000BC0381 /* LGLRenderRect.c in Sources */ = {isa = PBXBuildFile; fileRef = CD4061BD259DD35000BC0381 /* LGLRenderRect.c */; };
+		CD4061C2259DDF3B00BC0381 /* LFile.c in Sources */ = {isa = PBXBuildFile; fileRef = CD4061C1259DDF3B00BC0381 /* LFile.c */; };
+		CD4061C6259DE12C00BC0381 /* LGLBridgeOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4061C5259DE12C00BC0381 /* LGLBridgeOC.m */; };
+		CD4061CB259DE24800BC0381 /* Vertex-Light.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4061C9259DE24800BC0381 /* Vertex-Light.glsl */; };
+		CD4061CC259DE24800BC0381 /* Fragment-Light.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */; };
+		CD4A97D125A6E708005224BA /* Vertex-LightCube.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */; };
+		CD4A97D225A6E708005224BA /* Fragment-LightCube.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */; };
+		CDA9BDB325A32D1A0019C8A5 /* LGLRenderLight.c in Sources */ = {isa = PBXBuildFile; fileRef = CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */; };
+		CDA9BDB825A32D280019C8A5 /* Vertex-Rect.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */; };
+		CDA9BDB925A32D280019C8A5 /* Fragment-Rect.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD40618E259DB42E00BC0381 /* LearnOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD406191259DB42E00BC0381 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD406192259DB42E00BC0381 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD406194259DB42E00BC0381 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CD406195259DB42E00BC0381 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CD406197259DB42E00BC0381 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD406198259DB42E00BC0381 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD40619B259DB42E00BC0381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD40619D259DB43000BC0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4061A0259DB43000BC0381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD4061A2259DB43000BC0381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4061A3259DB43000BC0381 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD4061AD259DB48C00BC0381 /* LGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLView.h; sourceTree = "<group>"; };
+		CD4061AE259DB48C00BC0381 /* LGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLView.m; sourceTree = "<group>"; };
+		CD4061B2259DBBB300BC0381 /* LCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCamera.h; sourceTree = "<group>"; };
+		CD4061B3259DBBB300BC0381 /* LCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCamera.m; sourceTree = "<group>"; };
+		CD4061B7259DC3F900BC0381 /* LGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLProgram.h; sourceTree = "<group>"; };
+		CD4061B8259DC3F900BC0381 /* LGLProgram.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLProgram.c; sourceTree = "<group>"; };
+		CD4061BC259DD35000BC0381 /* LGLRenderRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLRenderRect.h; sourceTree = "<group>"; };
+		CD4061BD259DD35000BC0381 /* LGLRenderRect.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLRenderRect.c; sourceTree = "<group>"; };
+		CD4061C0259DDF3B00BC0381 /* LFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFile.h; sourceTree = "<group>"; };
+		CD4061C1259DDF3B00BC0381 /* LFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LFile.c; sourceTree = "<group>"; };
+		CD4061C4259DE12C00BC0381 /* LGLBridgeOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLBridgeOC.h; sourceTree = "<group>"; };
+		CD4061C5259DE12C00BC0381 /* LGLBridgeOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLBridgeOC.m; sourceTree = "<group>"; };
+		CD4061C9259DE24800BC0381 /* Vertex-Light.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Vertex-Light.glsl"; sourceTree = "<group>"; };
+		CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Fragment-Light.glsl"; sourceTree = "<group>"; };
+		CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fragment-LightCube.glsl"; sourceTree = "<group>"; };
+		CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vertex-LightCube.glsl"; sourceTree = "<group>"; };
+		CDA9BDB125A32D1A0019C8A5 /* LGLRenderLight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLRenderLight.h; sourceTree = "<group>"; };
+		CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLRenderLight.c; sourceTree = "<group>"; };
+		CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fragment-Rect.glsl"; sourceTree = "<group>"; };
+		CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vertex-Rect.glsl"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD40618B259DB42E00BC0381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD406185259DB42E00BC0381 = {
+			isa = PBXGroup;
+			children = (
+				CD406190259DB42E00BC0381 /* LearnOpenGL */,
+				CD40618F259DB42E00BC0381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD40618F259DB42E00BC0381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD40618E259DB42E00BC0381 /* LearnOpenGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD406190259DB42E00BC0381 /* LearnOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061AB259DB46300BC0381 /* src */,
+				CD406191259DB42E00BC0381 /* AppDelegate.h */,
+				CD406192259DB42E00BC0381 /* AppDelegate.m */,
+				CD406194259DB42E00BC0381 /* SceneDelegate.h */,
+				CD406195259DB42E00BC0381 /* SceneDelegate.m */,
+				CD406197259DB42E00BC0381 /* ViewController.h */,
+				CD406198259DB42E00BC0381 /* ViewController.m */,
+				CD40619A259DB42E00BC0381 /* Main.storyboard */,
+				CD40619D259DB43000BC0381 /* Assets.xcassets */,
+				CD40619F259DB43000BC0381 /* LaunchScreen.storyboard */,
+				CD4061A2259DB43000BC0381 /* Info.plist */,
+				CD4061A3259DB43000BC0381 /* main.m */,
+			);
+			path = LearnOpenGL;
+			sourceTree = "<group>";
+		};
+		CD4061AB259DB46300BC0381 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061D0259DE64B00BC0381 /* rect */,
+				CDA9BDB025A32CFD0019C8A5 /* light */,
+				CD4061D1259DE65B00BC0381 /* util */,
+				CD4061B6259DC3D900BC0381 /* program */,
+				CD4061AC259DB46A00BC0381 /* gl */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CD4061AC259DB46A00BC0381 /* gl */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061AD259DB48C00BC0381 /* LGLView.h */,
+				CD4061AE259DB48C00BC0381 /* LGLView.m */,
+				CD4061B2259DBBB300BC0381 /* LCamera.h */,
+				CD4061B3259DBBB300BC0381 /* LCamera.m */,
+			);
+			path = gl;
+			sourceTree = "<group>";
+		};
+		CD4061B6259DC3D900BC0381 /* program */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061B7259DC3F900BC0381 /* LGLProgram.h */,
+				CD4061B8259DC3F900BC0381 /* LGLProgram.c */,
+			);
+			path = program;
+			sourceTree = "<group>";
+		};
+		CD4061D0259DE64B00BC0381 /* rect */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */,
+				CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */,
+				CD4061BC259DD35000BC0381 /* LGLRenderRect.h */,
+				CD4061BD259DD35000BC0381 /* LGLRenderRect.c */,
+			);
+			path = rect;
+			sourceTree = "<group>";
+		};
+		CD4061D1259DE65B00BC0381 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061C0259DDF3B00BC0381 /* LFile.h */,
+				CD4061C1259DDF3B00BC0381 /* LFile.c */,
+				CD4061C4259DE12C00BC0381 /* LGLBridgeOC.h */,
+				CD4061C5259DE12C00BC0381 /* LGLBridgeOC.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		CDA9BDB025A32CFD0019C8A5 /* light */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */,
+				CD4061C9259DE24800BC0381 /* Vertex-Light.glsl */,
+				CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */,
+				CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */,
+				CDA9BDB125A32D1A0019C8A5 /* LGLRenderLight.h */,
+				CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */,
+			);
+			path = light;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD40618D259DB42E00BC0381 /* LearnOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4061A7259DB43000BC0381 /* Build configuration list for PBXNativeTarget "LearnOpenGL" */;
+			buildPhases = (
+				CD40618A259DB42E00BC0381 /* Sources */,
+				CD40618B259DB42E00BC0381 /* Frameworks */,
+				CD40618C259DB42E00BC0381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnOpenGL;
+			productName = LearnOpenGL;
+			productReference = CD40618E259DB42E00BC0381 /* LearnOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD406186259DB42E00BC0381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CD40618D259DB42E00BC0381 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = CD406189259DB42E00BC0381 /* Build configuration list for PBXProject "LearnOpenGL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD406185259DB42E00BC0381;
+			productRefGroup = CD40618F259DB42E00BC0381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD40618D259DB42E00BC0381 /* LearnOpenGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD40618C259DB42E00BC0381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A97D225A6E708005224BA /* Fragment-LightCube.glsl in Resources */,
+				CD4061A1259DB43000BC0381 /* LaunchScreen.storyboard in Resources */,
+				CD4061CB259DE24800BC0381 /* Vertex-Light.glsl in Resources */,
+				CDA9BDB925A32D280019C8A5 /* Fragment-Rect.glsl in Resources */,
+				CD40619E259DB43000BC0381 /* Assets.xcassets in Resources */,
+				CD4A97D125A6E708005224BA /* Vertex-LightCube.glsl in Resources */,
+				CDA9BDB825A32D280019C8A5 /* Vertex-Rect.glsl in Resources */,
+				CD4061CC259DE24800BC0381 /* Fragment-Light.glsl in Resources */,
+				CD40619C259DB42E00BC0381 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD40618A259DB42E00BC0381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD406199259DB42E00BC0381 /* ViewController.m in Sources */,
+				CD4061B4259DBBB300BC0381 /* LCamera.m in Sources */,
+				CD4061B9259DC3F900BC0381 /* LGLProgram.c in Sources */,
+				CDA9BDB325A32D1A0019C8A5 /* LGLRenderLight.c in Sources */,
+				CD4061C2259DDF3B00BC0381 /* LFile.c in Sources */,
+				CD406193259DB42E00BC0381 /* AppDelegate.m in Sources */,
+				CD4061A4259DB43000BC0381 /* main.m in Sources */,
+				CD4061C6259DE12C00BC0381 /* LGLBridgeOC.m in Sources */,
+				CD4061BE259DD35000BC0381 /* LGLRenderRect.c in Sources */,
+				CD4061AF259DB48C00BC0381 /* LGLView.m in Sources */,
+				CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD40619A259DB42E00BC0381 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD40619B259DB42E00BC0381 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD40619F259DB43000BC0381 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4061A0259DB43000BC0381 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD4061A5259DB43000BC0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD4061A6259DB43000BC0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4061A8259DB43000BC0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N59KJ676HE;
+				INFOPLIST_FILE = LearnOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.edaijia.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = edaijia_develop;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD4061A9259DB43000BC0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N59KJ676HE;
+				INFOPLIST_FILE = LearnOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.edaijia.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = edaijia_develop;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD406189259DB42E00BC0381 /* Build configuration list for PBXProject "LearnOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4061A5259DB43000BC0381 /* Debug */,
+				CD4061A6259DB43000BC0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4061A7259DB43000BC0381 /* Build configuration list for PBXNativeTarget "LearnOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4061A8259DB43000BC0381 /* Debug */,
+				CD4061A9259DB43000BC0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD406186259DB42E00BC0381 /* Project object */;
+}
