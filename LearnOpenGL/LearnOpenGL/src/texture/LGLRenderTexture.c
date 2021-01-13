@@ -142,21 +142,27 @@ void render_lt(struct LGLViewProtocol *protocol)
     struct LGLRenderTextureObject *ctx = (struct LGLRenderTextureObject *)protocol->ctx;
 
     protocol->viewport_bridge(protocol);
-    
-    GLfloat lightPos[3] = {1.2, 1.0, 2.0};
+        
     GLfloat cameraEyes[3] = {0};
-    protocol->camera_eye(protocol, cameraEyes);
+    GLfloat cameraFront[3] = {0};
+    protocol->camera_eye(protocol, cameraEyes, cameraFront);
     
     lglprogram_use(&protocol->program);
     lglprogram_set_vec3(&protocol->program, "viewPos", cameraEyes[0], cameraEyes[1], cameraEyes[2]);
-    lglprogram_set_vec3(&protocol->program, "light.position", lightPos[0], lightPos[1], lightPos[2]);
+    lglprogram_set_vec3(&protocol->program, "light.position", cameraEyes[0], cameraEyes[1], cameraEyes[2]);
+        
+    lglprogram_set_vec3(&protocol->program, "light.direction", cameraFront[0], cameraFront[1], cameraFront[2]);
+    lglprogram_set_float(&protocol->program, "light.constant", 1.0);
+    lglprogram_set_float(&protocol->program, "light.linear", 0.09);
+    lglprogram_set_float(&protocol->program, "light.quadratic", 0.032);
+    lglprogram_set_float(&protocol->program, "light.cutoff", (M_PI/180.0)*12);
     
     lglprogram_set_vec3(&protocol->program, "light.ambient", 0.1, 0.1, 0.1);
     lglprogram_set_vec3(&protocol->program, "light.diffuse", 0.5, 0.5, 0.5);
     lglprogram_set_vec3(&protocol->program, "light.specular", 1.0, 1.0, 1.0);
     
     lglprogram_set_vec3(&protocol->program, "material.specular", 0.5, 0.5, 0.5);
-    lglprogram_set_float(&protocol->program, "material.shininess", 64.0);
+    lglprogram_set_float(&protocol->program, "material.shininess", 32.0);
     lglprogram_set_int(&protocol->program, "material.diffuse", 0);
     
     protocol->mvp_bridge(protocol, protocol->program.handle);
@@ -165,7 +171,7 @@ void render_lt(struct LGLViewProtocol *protocol)
     
     lglprogram_use(&protocol->light_program);
   
-    protocol->mvp_light_bridge(protocol, protocol->light_program.handle, lightPos);
+    protocol->mvp_light_bridge(protocol, protocol->light_program.handle, cameraEyes);
     glBindVertexArray(ctx->lightVAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
 }

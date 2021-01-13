@@ -58,7 +58,7 @@ struct LGLViewProtocol {
     void (*mvp_light_bridge)(struct LGLViewProtocol *protocol, GLuint program, GLfloat p[3]);
     void (*viewport_bridge)(struct LGLViewProtocol *protocol);
     
-    void (*camera_eye)(struct LGLViewProtocol *protocol, GLfloat *eyes);
+    void (*camera_eye)(struct LGLViewProtocol *protocol, GLfloat *eyes, GLfloat *front);
     
     void       *info;
 };

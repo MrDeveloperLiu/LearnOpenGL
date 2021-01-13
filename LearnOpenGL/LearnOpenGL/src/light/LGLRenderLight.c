@@ -132,7 +132,7 @@ void render_l(struct LGLViewProtocol *protocol)
     
     GLfloat lightPos[3] = {1.2, 1.0, 2.0};
     GLfloat cameraEyes[3] = {0};
-    protocol->camera_eye(protocol, cameraEyes);
+    protocol->camera_eye(protocol, cameraEyes, NULL);
     
     lglprogram_use(&protocol->program);
     lglprogram_set_vec3(&protocol->program, "viewPos", cameraEyes[0], cameraEyes[1], cameraEyes[2]);

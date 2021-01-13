@@ -103,13 +103,19 @@ void mvp_light_bridge(struct LGLViewProtocol *protocol, GLuint program, GLfloat 
     glUniformMatrix4fv(pidx, 1, GL_FALSE, projection.m);
 }
 
-void camera_eye(struct LGLViewProtocol *protocol, GLfloat *eyes)
+void camera_eye(struct LGLViewProtocol *protocol, GLfloat *eyes, GLfloat *front)
 {
     if (eyes) {
         LGLView *v = (__bridge LGLView *)protocol->bridge_ctx;
         eyes[0] = v.camera.pos.x;
         eyes[1] = v.camera.pos.y;
         eyes[2] = v.camera.pos.z;
+    }
+    if (front) {
+        LGLView *v = (__bridge LGLView *)protocol->bridge_ctx;
+        front[0] = v.camera.front.x;
+        front[1] = v.camera.front.y;
+        front[2] = v.camera.front.z;
     }
 }
 
