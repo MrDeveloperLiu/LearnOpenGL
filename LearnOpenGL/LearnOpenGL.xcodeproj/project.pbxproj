@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD14F56E25AEAC02007BEA98 /* Texture1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD14F56C25AEAC02007BEA98 /* Texture1.jpg */; };
+		CD14F56F25AEAC02007BEA98 /* Texture2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD14F56D25AEAC02007BEA98 /* Texture2.png */; };
+		CD2C6A8525AEB9C200F57648 /* LGLRenderTexture.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2C6A8425AEB9C200F57648 /* LGLRenderTexture.c */; };
+		CD2C6A8A25AEBB5900F57648 /* Fragment-Texture.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD2C6A8825AEBB5800F57648 /* Fragment-Texture.glsl */; };
+		CD2C6A8B25AEBB5900F57648 /* Vertex-Texture.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD2C6A8925AEBB5800F57648 /* Vertex-Texture.glsl */; };
+		CD2C6A9125AEBE2500F57648 /* LLog.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2C6A9025AEBE2500F57648 /* LLog.c */; };
+		CD2C6A9525AEBEA000F57648 /* LGLTexture.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2C6A9425AEBEA000F57648 /* LGLTexture.c */; };
 		CD406193259DB42E00BC0381 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406192259DB42E00BC0381 /* AppDelegate.m */; };
 		CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406195259DB42E00BC0381 /* SceneDelegate.m */; };
 		CD406199259DB42E00BC0381 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406198259DB42E00BC0381 /* ViewController.m */; };
@@ -30,6 +37,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD14F56C25AEAC02007BEA98 /* Texture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Texture1.jpg; sourceTree = "<group>"; };
+		CD14F56D25AEAC02007BEA98 /* Texture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Texture2.png; sourceTree = "<group>"; };
+		CD2C6A8325AEB9C200F57648 /* LGLRenderTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLRenderTexture.h; sourceTree = "<group>"; };
+		CD2C6A8425AEB9C200F57648 /* LGLRenderTexture.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLRenderTexture.c; sourceTree = "<group>"; };
+		CD2C6A8825AEBB5800F57648 /* Fragment-Texture.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fragment-Texture.glsl"; sourceTree = "<group>"; };
+		CD2C6A8925AEBB5800F57648 /* Vertex-Texture.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vertex-Texture.glsl"; sourceTree = "<group>"; };
+		CD2C6A8F25AEBE2500F57648 /* LLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLog.h; sourceTree = "<group>"; };
+		CD2C6A9025AEBE2500F57648 /* LLog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LLog.c; sourceTree = "<group>"; };
+		CD2C6A9325AEBEA000F57648 /* LGLTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLTexture.h; sourceTree = "<group>"; };
+		CD2C6A9425AEBEA000F57648 /* LGLTexture.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLTexture.c; sourceTree = "<group>"; };
 		CD40618E259DB42E00BC0381 /* LearnOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD406191259DB42E00BC0381 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD406192259DB42E00BC0381 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD14F56B25AEAC02007BEA98 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				CD14F56C25AEAC02007BEA98 /* Texture1.jpg */,
+				CD14F56D25AEAC02007BEA98 /* Texture2.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		CD2C6A8225AEB9AB00F57648 /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C6A8325AEB9C200F57648 /* LGLRenderTexture.h */,
+				CD2C6A8425AEB9C200F57648 /* LGLRenderTexture.c */,
+			);
+			path = texture;
+			sourceTree = "<group>";
+		};
 		CD406185259DB42E00BC0381 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +129,7 @@
 		CD406190259DB42E00BC0381 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				CD14F56B25AEAC02007BEA98 /* res */,
 				CD4061AB259DB46300BC0381 /* src */,
 				CD406191259DB42E00BC0381 /* AppDelegate.h */,
 				CD406192259DB42E00BC0381 /* AppDelegate.m */,
@@ -113,6 +149,8 @@
 		CD4061AB259DB46300BC0381 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				CD2C6A8225AEB9AB00F57648 /* texture */,
+				CD82EE8225AEACC400AC4EAB /* shader */,
 				CD4061D0259DE64B00BC0381 /* rect */,
 				CDA9BDB025A32CFD0019C8A5 /* light */,
 				CD4061D1259DE65B00BC0381 /* util */,
@@ -138,6 +176,8 @@
 			children = (
 				CD4061B7259DC3F900BC0381 /* LGLProgram.h */,
 				CD4061B8259DC3F900BC0381 /* LGLProgram.c */,
+				CD2C6A9325AEBEA000F57648 /* LGLTexture.h */,
+				CD2C6A9425AEBEA000F57648 /* LGLTexture.c */,
 			);
 			path = program;
 			sourceTree = "<group>";
@@ -145,8 +185,6 @@
 		CD4061D0259DE64B00BC0381 /* rect */ = {
 			isa = PBXGroup;
 			children = (
-				CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */,
-				CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */,
 				CD4061BC259DD35000BC0381 /* LGLRenderRect.h */,
 				CD4061BD259DD35000BC0381 /* LGLRenderRect.c */,
 			);
@@ -156,21 +194,34 @@
 		CD4061D1259DE65B00BC0381 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				CD4061C0259DDF3B00BC0381 /* LFile.h */,
-				CD4061C1259DDF3B00BC0381 /* LFile.c */,
 				CD4061C4259DE12C00BC0381 /* LGLBridgeOC.h */,
 				CD4061C5259DE12C00BC0381 /* LGLBridgeOC.m */,
+				CD4061C0259DDF3B00BC0381 /* LFile.h */,
+				CD4061C1259DDF3B00BC0381 /* LFile.c */,
+				CD2C6A8F25AEBE2500F57648 /* LLog.h */,
+				CD2C6A9025AEBE2500F57648 /* LLog.c */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		CD82EE8225AEACC400AC4EAB /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */,
+				CD4061C9259DE24800BC0381 /* Vertex-Light.glsl */,
+				CD2C6A8825AEBB5800F57648 /* Fragment-Texture.glsl */,
+				CD2C6A8925AEBB5800F57648 /* Vertex-Texture.glsl */,
+				CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */,
+				CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */,
+				CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */,
+				CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */,
+			);
+			path = shader;
 			sourceTree = "<group>";
 		};
 		CDA9BDB025A32CFD0019C8A5 /* light */ = {
 			isa = PBXGroup;
 			children = (
-				CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */,
-				CD4061C9259DE24800BC0381 /* Vertex-Light.glsl */,
-				CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */,
-				CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */,
 				CDA9BDB125A32D1A0019C8A5 /* LGLRenderLight.h */,
 				CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */,
 			);
@@ -233,13 +284,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2C6A8A25AEBB5900F57648 /* Fragment-Texture.glsl in Resources */,
 				CD4A97D225A6E708005224BA /* Fragment-LightCube.glsl in Resources */,
 				CD4061A1259DB43000BC0381 /* LaunchScreen.storyboard in Resources */,
 				CD4061CB259DE24800BC0381 /* Vertex-Light.glsl in Resources */,
 				CDA9BDB925A32D280019C8A5 /* Fragment-Rect.glsl in Resources */,
 				CD40619E259DB43000BC0381 /* Assets.xcassets in Resources */,
+				CD14F56E25AEAC02007BEA98 /* Texture1.jpg in Resources */,
 				CD4A97D125A6E708005224BA /* Vertex-LightCube.glsl in Resources */,
 				CDA9BDB825A32D280019C8A5 /* Vertex-Rect.glsl in Resources */,
+				CD14F56F25AEAC02007BEA98 /* Texture2.png in Resources */,
+				CD2C6A8B25AEBB5900F57648 /* Vertex-Texture.glsl in Resources */,
 				CD4061CC259DE24800BC0381 /* Fragment-Light.glsl in Resources */,
 				CD40619C259DB42E00BC0381 /* Main.storyboard in Resources */,
 			);
@@ -252,17 +307,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2C6A9125AEBE2500F57648 /* LLog.c in Sources */,
 				CD406199259DB42E00BC0381 /* ViewController.m in Sources */,
 				CD4061B4259DBBB300BC0381 /* LCamera.m in Sources */,
 				CD4061B9259DC3F900BC0381 /* LGLProgram.c in Sources */,
 				CDA9BDB325A32D1A0019C8A5 /* LGLRenderLight.c in Sources */,
 				CD4061C2259DDF3B00BC0381 /* LFile.c in Sources */,
 				CD406193259DB42E00BC0381 /* AppDelegate.m in Sources */,
+				CD2C6A9525AEBEA000F57648 /* LGLTexture.c in Sources */,
 				CD4061A4259DB43000BC0381 /* main.m in Sources */,
 				CD4061C6259DE12C00BC0381 /* LGLBridgeOC.m in Sources */,
 				CD4061BE259DD35000BC0381 /* LGLRenderRect.c in Sources */,
 				CD4061AF259DB48C00BC0381 /* LGLView.m in Sources */,
 				CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */,
+				CD2C6A8525AEB9C200F57648 /* LGLRenderTexture.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,24 +9,24 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-char *lglstring_alloc_from_file(const char *fp, long *size)
+int lglstring_alloc_from_file(const char *fp, char **buf, long *size)
 {
     FILE *f = fopen(fp, "r");
     if (!f) {
-        return NULL;
+        return -1;
     }
     fseek(f, 0, SEEK_END);
     long s = ftell(f);
     rewind(f);
-    char *code = (char *)malloc(s);
-    fread(code, s, 1, f);
+    *buf = (char *)malloc(s);
+    fread(*buf, s, 1, f);
     fclose(f);
     if (size)
         *size = s;
-    return code;
+    return 0;
 }
 
-void lglstring_free(void **s)
+void lgl_free_p(void **s)
 {
     if (s && *s) {
         free(*s);
@@ -34,15 +34,3 @@ void lglstring_free(void **s)
     }
 }
 
-void lgl_log(int level, const char *tag, const char *fmt, ...)
-{
-    if (!(lgl_level & level)) {
-        return;
-    }
-    char message[1024];
-    va_list arg;
-    va_start(arg, fmt);
-    vsprintf(message, fmt, arg);
-    va_end(arg);
-    printf("L: [%s] %s \n", tag, message);
-}

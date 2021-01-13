@@ -32,6 +32,7 @@ void lglprogram_use(LGLProgram *prog);
 void lglprogram_set_vec3(LGLProgram *prog, const GLchar *name, GLfloat x, GLfloat y, GLfloat z);
 void lglprogram_set_vec4(LGLProgram *prog, const GLchar *name, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
 void lglprogram_set_float(LGLProgram *prog, const GLchar *name, GLfloat v);
+void lglprogram_set_int(LGLProgram *prog, const GLchar *name, GLint v);
 
 #define kMVPNameSize 64
 

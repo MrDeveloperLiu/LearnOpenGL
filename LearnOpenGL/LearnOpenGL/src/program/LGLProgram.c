@@ -72,22 +72,24 @@ int lglprogram_init(LGLProgram *prog, const char *vsh, const char *fsh)
         return -1;
     }
     long vlen;
-    char *vsh_code = lglstring_alloc_from_file(lgl_filepath(vsh), &vlen);
+    char *vsh_code = NULL;
+    lglstring_alloc_from_file(lgl_filepath(vsh), &vsh_code, &vlen);
     int ret = lglprogram_create_shader((const GLchar *)vsh_code, (GLint)vlen, GL_VERTEX_SHADER, &prog->v_shader_handle);
     if (ret != 0){
         LGL_LOGD("GL_VERTEX_SHADER create fail %d", ret);
         goto fail;
     }
-    lglstring_free((void**)&vsh_code);
+    lgl_free_p((void**)&vsh_code);
     
     long flen;
-    char *fsh_code = lglstring_alloc_from_file(lgl_filepath(fsh), &flen);
+    char *fsh_code = NULL;
+    lglstring_alloc_from_file(lgl_filepath(fsh), &fsh_code, &flen);
     ret = lglprogram_create_shader((const GLchar *)fsh_code, (GLint)flen, GL_FRAGMENT_SHADER, &prog->f_shader_handle);
     if (ret != 0){
         LGL_LOGD("GL_FRAGMENT_SHADER create fail %d", ret);
         goto fail;
     }
-    lglstring_free((void**)&fsh_code);
+    lgl_free_p((void**)&fsh_code);
     
     ret = lglprogram_create_program(&prog->handle, prog->v_shader_handle, prog->f_shader_handle);
     if (ret != 0){
@@ -98,8 +100,8 @@ int lglprogram_init(LGLProgram *prog, const char *vsh, const char *fsh)
     return 0;
     
 fail:
-    lglstring_free((void**)&vsh_code);
-    lglstring_free((void**)&fsh_code);
+    lgl_free_p((void**)&vsh_code);
+    lgl_free_p((void**)&fsh_code);
     lglprogram_deinit(prog);
     return -2;
 }
@@ -136,5 +138,12 @@ void lglprogram_set_float(LGLProgram *prog, const GLchar *name, GLfloat v)
 {
     if (prog) {
         glUniform1f(glGetUniformLocation(prog->handle, name), v);
+    }
+}
+
+void lglprogram_set_int(LGLProgram *prog, const GLchar *name, GLint v)
+{
+    if (prog) {
+        glUniform1i(glGetUniformLocation(prog->handle, name), v);
     }
 }

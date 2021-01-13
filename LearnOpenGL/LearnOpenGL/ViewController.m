@@ -10,6 +10,7 @@
 
 #include "LGLRenderRect.h"
 #include "LGLRenderLight.h"
+#include "LGLRenderTexture.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) LGLView *glView;
@@ -25,7 +26,8 @@
     [super viewDidLoad];
     _glView = [[LGLView alloc] initWithFrame:self.view.bounds];
 //    _glView.protocol = lgl_rect_protocol();
-    _glView.protocol = lgl_light_protocol();
+//    _glView.protocol = lgl_light_protocol();
+    _glView.protocol = lgl_texture_protocol();
     [self.view addSubview:_glView];
 }
 
