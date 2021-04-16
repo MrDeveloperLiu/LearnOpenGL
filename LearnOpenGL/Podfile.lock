@@ -1,0 +1,111 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit/Base (6.2.0)
+  - BaiduMapKit/Map (6.2.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Search (6.2.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Utils (6.2.0):
+    - BaiduMapKit/Base
+  - BMKLocationKit (2.0.0)
+  - Flutter (1.0.0)
+  - flutter_baidu_mapapi_base (2.0.0):
+    - BaiduMapKit/Utils (= 6.2.0)
+    - Flutter
+  - flutter_baidu_mapapi_map (2.0.0):
+    - BaiduMapKit/Map (= 6.2.0)
+    - Flutter
+    - flutter_baidu_mapapi_base
+  - flutter_baidu_mapapi_search (0.0.1):
+    - BaiduMapKit/Search (= 6.2.0)
+    - Flutter
+    - flutter_baidu_mapapi_base
+  - flutter_baidu_mapapi_utils (2.0.0):
+    - BaiduMapKit/Utils (= 6.2.0)
+    - Flutter
+    - flutter_baidu_mapapi_base
+  - flutter_bmflocation (1.0.3):
+    - BMKLocationKit
+    - Flutter
+  - flutter_edaijia (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - flutter_baidu_mapapi_base
+    - flutter_baidu_mapapi_map
+    - flutter_baidu_mapapi_search
+    - flutter_baidu_mapapi_utils
+    - flutter_bmflocation
+    - permission_handler
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+
+DEPENDENCIES:
+  - AFNetworking
+  - Flutter (from `../flutter_edaijia/.ios/Flutter/engine`)
+  - flutter_baidu_mapapi_base (from `../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_base/ios`)
+  - flutter_baidu_mapapi_map (from `../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_map/ios`)
+  - flutter_baidu_mapapi_search (from `../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_search/ios`)
+  - flutter_baidu_mapapi_utils (from `../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_utils/ios`)
+  - flutter_bmflocation (from `../flutter_edaijia/.ios/.symlinks/plugins/flutter_bmflocation/ios`)
+  - flutter_edaijia (from `../flutter_edaijia/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../flutter_edaijia/.ios/Flutter/FlutterPluginRegistrant`)
+  - permission_handler (from `../flutter_edaijia/.ios/.symlinks/plugins/permission_handler/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - BaiduMapKit
+    - BMKLocationKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_edaijia/.ios/Flutter/engine"
+  flutter_baidu_mapapi_base:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_base/ios"
+  flutter_baidu_mapapi_map:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_map/ios"
+  flutter_baidu_mapapi_search:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_search/ios"
+  flutter_baidu_mapapi_utils:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/flutter_baidu_mapapi_utils/ios"
+  flutter_bmflocation:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/flutter_bmflocation/ios"
+  flutter_edaijia:
+    :path: "../flutter_edaijia/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../flutter_edaijia/.ios/Flutter/FlutterPluginRegistrant"
+  permission_handler:
+    :path: "../flutter_edaijia/.ios/.symlinks/plugins/permission_handler/ios"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BaiduMapKit: 907c6d9b74f66c3ff4741fc4b568ae0b339917f8
+  BMKLocationKit: 097814ef672b1e57e86e6c1968d7892fb78002bf
+  Flutter: ac41d61a47ae5bf8195a5598d2d63754888ec0d5
+  flutter_baidu_mapapi_base: 90fddba11ec4435406a7211d6ee905b4311c31db
+  flutter_baidu_mapapi_map: 771bf00671832b1fcddb17733518cd631529df16
+  flutter_baidu_mapapi_search: 4cffaa74e739a4114595c4f82f790e1783bb612d
+  flutter_baidu_mapapi_utils: a5bd582b91ecd35be1bc45558b38f49d5684f70a
+  flutter_bmflocation: 12f1ba91bae4b16d78d4f475023e0254ed351f1c
+  flutter_edaijia: 03f38e40f620b9291c6ee4ddaa7b03f35e5bac1e
+  FlutterPluginRegistrant: aac4b6865b04a60f88bdce8c4ccc713e4e3c0010
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+
+PODFILE CHECKSUM: d864297ccf44678505eb787201d0c814310ac850
+
+COCOAPODS: 1.10.0

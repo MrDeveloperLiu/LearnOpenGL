@@ -1,0 +1,6 @@
+framework module flutter_baidu_mapapi_utils {
+  umbrella header "flutter_baidu_mapapi_utils-umbrella.h"
+
+  export *
+  module * { export * }
+}

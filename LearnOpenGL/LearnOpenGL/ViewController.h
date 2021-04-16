@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlutterComponents.h"
 
 @interface ViewController : UIViewController
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		CD2C6A9125AEBE2500F57648 /* LLog.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2C6A9025AEBE2500F57648 /* LLog.c */; };
 		CD2C6A9525AEBEA000F57648 /* LGLTexture.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2C6A9425AEBEA000F57648 /* LGLTexture.c */; };
 		CD406193259DB42E00BC0381 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406192259DB42E00BC0381 /* AppDelegate.m */; };
-		CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406195259DB42E00BC0381 /* SceneDelegate.m */; };
 		CD406199259DB42E00BC0381 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD406198259DB42E00BC0381 /* ViewController.m */; };
 		CD40619C259DB42E00BC0381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD40619A259DB42E00BC0381 /* Main.storyboard */; };
 		CD40619E259DB43000BC0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD40619D259DB43000BC0381 /* Assets.xcassets */; };
@@ -31,12 +30,16 @@
 		CD4061CC259DE24800BC0381 /* Fragment-Light.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */; };
 		CD4A97D125A6E708005224BA /* Vertex-LightCube.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */; };
 		CD4A97D225A6E708005224BA /* Fragment-LightCube.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */; };
+		CD665DD82624360B00D9C108 /* FlutterComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = CD665DD72624360B00D9C108 /* FlutterComponents.m */; };
 		CDA9BDB325A32D1A0019C8A5 /* LGLRenderLight.c in Sources */ = {isa = PBXBuildFile; fileRef = CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */; };
 		CDA9BDB825A32D280019C8A5 /* Vertex-Rect.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */; };
 		CDA9BDB925A32D280019C8A5 /* Fragment-Rect.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */; };
+		D28840F083E651D20F19DF32 /* Pods_LearnOpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F770C052CC84FC72EF08342 /* Pods_LearnOpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C8BC74F164C022711C1CC0E /* Pods-LearnOpenGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGL.debug.xcconfig"; path = "Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL.debug.xcconfig"; sourceTree = "<group>"; };
+		6F770C052CC84FC72EF08342 /* Pods_LearnOpenGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnOpenGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD14F56C25AEAC02007BEA98 /* Texture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Texture1.jpg; sourceTree = "<group>"; };
 		CD14F56D25AEAC02007BEA98 /* Texture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Texture2.png; sourceTree = "<group>"; };
 		CD2C6A8325AEB9C200F57648 /* LGLRenderTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLRenderTexture.h; sourceTree = "<group>"; };
@@ -50,8 +53,6 @@
 		CD40618E259DB42E00BC0381 /* LearnOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD406191259DB42E00BC0381 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD406192259DB42E00BC0381 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CD406194259DB42E00BC0381 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		CD406195259DB42E00BC0381 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		CD406197259DB42E00BC0381 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD406198259DB42E00BC0381 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CD40619B259DB42E00BC0381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,10 +76,13 @@
 		CD4061CA259DE24800BC0381 /* Fragment-Light.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Fragment-Light.glsl"; sourceTree = "<group>"; };
 		CD4A97CF25A6E708005224BA /* Fragment-LightCube.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fragment-LightCube.glsl"; sourceTree = "<group>"; };
 		CD4A97D025A6E708005224BA /* Vertex-LightCube.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vertex-LightCube.glsl"; sourceTree = "<group>"; };
+		CD665DD62624360B00D9C108 /* FlutterComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterComponents.h; sourceTree = "<group>"; };
+		CD665DD72624360B00D9C108 /* FlutterComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterComponents.m; sourceTree = "<group>"; };
 		CDA9BDB125A32D1A0019C8A5 /* LGLRenderLight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLRenderLight.h; sourceTree = "<group>"; };
 		CDA9BDB225A32D1A0019C8A5 /* LGLRenderLight.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LGLRenderLight.c; sourceTree = "<group>"; };
 		CDA9BDB625A32D280019C8A5 /* Fragment-Rect.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fragment-Rect.glsl"; sourceTree = "<group>"; };
 		CDA9BDB725A32D280019C8A5 /* Vertex-Rect.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vertex-Rect.glsl"; sourceTree = "<group>"; };
+		F8C633931F68E289C1921E38 /* Pods-LearnOpenGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGL.release.xcconfig"; path = "Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +90,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28840F083E651D20F19DF32 /* Pods_LearnOpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A756F96052B288A0B5C6FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F770C052CC84FC72EF08342 /* Pods_LearnOpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD14F56B25AEAC02007BEA98 /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,8 @@
 			children = (
 				CD406190259DB42E00BC0381 /* LearnOpenGL */,
 				CD40618F259DB42E00BC0381 /* Products */,
+				F15695226E8F6E090523C780 /* Pods */,
+				27A756F96052B288A0B5C6FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,12 +144,11 @@
 		CD406190259DB42E00BC0381 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				CD75C450262455A1005A0114 /* flutter */,
 				CD14F56B25AEAC02007BEA98 /* res */,
 				CD4061AB259DB46300BC0381 /* src */,
 				CD406191259DB42E00BC0381 /* AppDelegate.h */,
 				CD406192259DB42E00BC0381 /* AppDelegate.m */,
-				CD406194259DB42E00BC0381 /* SceneDelegate.h */,
-				CD406195259DB42E00BC0381 /* SceneDelegate.m */,
 				CD406197259DB42E00BC0381 /* ViewController.h */,
 				CD406198259DB42E00BC0381 /* ViewController.m */,
 				CD40619A259DB42E00BC0381 /* Main.storyboard */,
@@ -204,6 +218,15 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		CD75C450262455A1005A0114 /* flutter */ = {
+			isa = PBXGroup;
+			children = (
+				CD665DD62624360B00D9C108 /* FlutterComponents.h */,
+				CD665DD72624360B00D9C108 /* FlutterComponents.m */,
+			);
+			path = flutter;
+			sourceTree = "<group>";
+		};
 		CD82EE8225AEACC400AC4EAB /* shader */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +251,15 @@
 			path = light;
 			sourceTree = "<group>";
 		};
+		F15695226E8F6E090523C780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C8BC74F164C022711C1CC0E /* Pods-LearnOpenGL.debug.xcconfig */,
+				F8C633931F68E289C1921E38 /* Pods-LearnOpenGL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,9 +267,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD4061A7259DB43000BC0381 /* Build configuration list for PBXNativeTarget "LearnOpenGL" */;
 			buildPhases = (
+				25BBE8232A3D8D7ED66B0E57 /* [CP] Check Pods Manifest.lock */,
+				8ACFEAD15BADE695476DE2AD /* [CP-User] Run Flutter Build flutter_edaijia Script */,
 				CD40618A259DB42E00BC0381 /* Sources */,
 				CD40618B259DB42E00BC0381 /* Frameworks */,
 				CD40618C259DB42E00BC0381 /* Resources */,
+				F7DAEAD1615D997F3C66B699 /* [CP] Embed Pods Frameworks */,
+				9CF1AEDCD5A927D8B2505A7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +338,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25BBE8232A3D8D7ED66B0E57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnOpenGL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ACFEAD15BADE695476DE2AD /* [CP-User] Run Flutter Build flutter_edaijia Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_edaijia Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_edaijia/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		9CF1AEDCD5A927D8B2505A7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DAEAD1615D997F3C66B699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnOpenGL/Pods-LearnOpenGL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD40618A259DB42E00BC0381 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,9 +422,9 @@
 				CD2C6A9525AEBEA000F57648 /* LGLTexture.c in Sources */,
 				CD4061A4259DB43000BC0381 /* main.m in Sources */,
 				CD4061C6259DE12C00BC0381 /* LGLBridgeOC.m in Sources */,
+				CD665DD82624360B00D9C108 /* FlutterComponents.m in Sources */,
 				CD4061BE259DD35000BC0381 /* LGLRenderRect.c in Sources */,
 				CD4061AF259DB48C00BC0381 /* LGLView.m in Sources */,
-				CD406196259DB42E00BC0381 /* SceneDelegate.m in Sources */,
 				CD2C6A8525AEB9C200F57648 /* LGLRenderTexture.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -450,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -460,12 +565,18 @@
 		};
 		CD4061A8259DB43000BC0381 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8BC74F164C022711C1CC0E /* Pods-LearnOpenGL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N59KJ676HE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
 				INFOPLIST_FILE = LearnOpenGL/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,18 +586,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edaijia.develop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = edaijia_develop;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CD4061A9259DB43000BC0381 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C633931F68E289C1921E38 /* Pods-LearnOpenGL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N59KJ676HE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
 				INFOPLIST_FILE = LearnOpenGL/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edaijia.develop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = edaijia_develop;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

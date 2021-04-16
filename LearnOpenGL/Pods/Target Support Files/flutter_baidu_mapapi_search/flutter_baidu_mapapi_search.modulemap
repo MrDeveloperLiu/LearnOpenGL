@@ -1,0 +1,6 @@
+framework module flutter_baidu_mapapi_search {
+  umbrella header "flutter_baidu_mapapi_search-umbrella.h"
+
+  export *
+  module * { export * }
+}

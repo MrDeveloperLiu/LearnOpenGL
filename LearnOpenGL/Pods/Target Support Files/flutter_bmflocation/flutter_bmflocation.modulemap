@@ -1,0 +1,6 @@
+framework module flutter_bmflocation {
+  umbrella header "flutter_bmflocation-umbrella.h"
+
+  export *
+  module * { export * }
+}
